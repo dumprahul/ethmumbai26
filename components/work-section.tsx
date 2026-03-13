@@ -9,39 +9,45 @@ gsap.registerPlugin(ScrollTrigger)
 
 const experiments = [
   {
-    title: "Project Lattice",
-    medium: "Interface Study",
-    description: "Structural framework for adaptive layouts in dynamic content systems.",
+    title: "Private RSVP",
+    medium: "ZK Proof Flow",
+    description:
+      "Attendees prove they meet event requirements locally and submit a zero-knowledge proof instead of personal data.",
     span: "col-span-2 row-span-2",
   },
   {
-    title: "Signal Field",
-    medium: "Agent Orchestration",
-    description: "Autonomous coordination layer for multi-agent environments.",
+    title: "BitGo Wallet Creation",
+    medium: "Wallet Infra",
+    description:
+      "When a user joins an event, Disco spins up a BitGo-managed wallet to isolate ticket activity from main wallets.",
     span: "col-span-1 row-span-1",
   },
   {
-    title: "Silent Agent",
-    medium: "Visual System",
-    description: "Non-intrusive interface patterns for ambient computing.",
+    title: "Base Ticket Contracts",
+    medium: "On-Chain Logic",
+    description:
+      "Smart contracts on Base verify proofs and mint event tickets, so organizers never see raw attendee data.",
     span: "col-span-1 row-span-2",
   },
   {
-    title: "Noir Grid",
-    medium: "Typography",
-    description: "High-contrast typographic system for editorial interfaces.",
+    title: "Age & Membership Checks",
+    medium: "Eligibility Rules",
+    description:
+      "Configure age thresholds or membership checks as verifiable conditions, without storing documents or IDs.",
     span: "col-span-1 row-span-1",
   },
   {
-    title: "Echo Chamber",
-    medium: "Audio-Visual",
-    description: "Generative soundscapes mapped to interface interactions.",
+    title: "Check-In Without Doxxing",
+    medium: "Entry Flow",
+    description:
+      "At the door, attendees sign a message from their Disco wallet to prove ticket ownership—identity stays private.",
     span: "col-span-2 row-span-1",
   },
   {
-    title: "Void Protocol",
-    medium: "Experimental",
-    description: "Negative space as primary interaction medium.",
+    title: "Analytics Without Profiles",
+    medium: "Organizer View",
+    description:
+      "Organizers see proofs of eligibility and attendance stats, never email lists or long-term identity graphs.",
     span: "col-span-1 row-span-1",
   },
 ]
@@ -98,11 +104,11 @@ export function WorkSection() {
       {/* Section header */}
       <div ref={headerRef} className="mb-16 flex items-end justify-between">
         <div>
-          <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-accent">02 / Experiments</span>
-          <h2 className="mt-4 font-[var(--font-bebas)] text-5xl md:text-7xl tracking-tight">SELECTED WORK</h2>
+          <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-accent">02 / Event Flows</span>
+          <h2 className="mt-4 font-[var(--font-bebas)] text-5xl md:text-7xl tracking-tight">HOW DISCO RUNS EVENTS</h2>
         </div>
         <p className="hidden md:block max-w-xs font-mono text-xs text-muted-foreground text-right leading-relaxed">
-          Studies across interface design, agent systems, and visual computation.
+          From RSVP to check-in, Disco keeps eligibility on-chain and identities off the guest list.
         </p>
       </div>
 

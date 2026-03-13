@@ -9,29 +9,29 @@ gsap.registerPlugin(ScrollTrigger)
 
 const signals = [
   {
-    date: "2025.06.10",
-    title: "Signal Field",
-    note: "New interface paradigm for ambient computing environments.",
+    date: "2026.03.14",
+    title: "ZK RSVP Live",
+    note: "Users can now RSVP to events with zero-knowledge proofs instead of sharing emails, names, or wallet history.",
   },
   {
-    date: "2025.05.28",
-    title: "Silent Agent",
-    note: "Orchestration layer for autonomous design systems.",
+    date: "2026.03.10",
+    title: "BitGo Wallets Wired In",
+    note: "Disco automatically provisions BitGo-powered wallets per attendee to isolate event activity from main wallets.",
   },
   {
-    date: "2025.05.15",
-    title: "Noir Grid",
-    note: "Typographic system for editorial interfaces.",
+    date: "2026.03.05",
+    title: "Base Ticket Contracts",
+    note: "Event eligibility and ticket issuance are now handled by smart contracts deployed on Base.",
   },
   {
-    date: "2025.04.30",
-    title: "Project Lattice",
-    note: "Structural framework for adaptive layouts.",
+    date: "2026.02.28",
+    title: "Age-Gated Proofs",
+    note: "Support for proving age ≥ threshold without revealing the actual birth date or identity data.",
   },
   {
-    date: "2025.04.12",
-    title: "Echo Chamber",
-    note: "Audio-visual synthesis in browser environments.",
+    date: "2026.02.20",
+    title: "Organizer Console",
+    note: "Simple event configuration for requirement rules, without ever touching raw attendee data.",
   },
 ]
 
@@ -135,8 +135,10 @@ export function SignalsSection() {
 
       {/* Section header */}
       <div ref={headerRef} className="mb-16 pr-6 md:pr-12">
-        <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-accent">01 / Signals</span>
-        <h2 className="mt-4 font-[var(--font-bebas)] text-5xl md:text-7xl tracking-tight">WHAT&apos;S NEW</h2>
+        <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-accent">01 / Product Signals</span>
+        <h2 className="mt-4 font-[var(--font-bebas)] text-5xl md:text-7xl tracking-tight">
+          WHAT&apos;S NEW IN DISCO
+        </h2>
       </div>
 
       {/* Horizontal scroll container */}

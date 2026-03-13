@@ -143,8 +143,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$smooth$2d$scro
 ;
 ;
 const metadata = {
-    title: "SIGNAL — Experimental Creative Studio",
-    description: "Interface studies in controlled environments. We design systems that behave, not just screens that display.",
+    title: "Disco — Privacy-Preserving Event Platform",
+    description: "Disco lets people join events with zero-knowledge proofs instead of sharing emails, names, or raw wallet data. Prove you meet requirements like age or membership while keeping your identity and on-chain history private.",
     generator: "v0.app",
     icons: {
         icon: [

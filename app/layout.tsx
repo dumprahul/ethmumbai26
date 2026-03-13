@@ -18,9 +18,9 @@ const ibmPlexMono = IBM_Plex_Mono({
 const bebasNeue = Bebas_Neue({ weight: "400", subsets: ["latin"], variable: "--font-bebas" })
 
 export const metadata: Metadata = {
-  title: "SIGNAL — Experimental Creative Studio",
+  title: "Disco — Privacy-Preserving Event Platform",
   description:
-    "Interface studies in controlled environments. We design systems that behave, not just screens that display.",
+    "Disco lets people join events with zero-knowledge proofs instead of sharing emails, names, or raw wallet data. Prove you meet requirements like age or membership while keeping your identity and on-chain history private.",
   generator: "v0.app",
   icons: {
     icon: [

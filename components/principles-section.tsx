@@ -16,37 +16,41 @@ export function PrinciplesSection() {
     {
       number: "01",
       titleParts: [
-        { text: "INTERFACE", highlight: true },
-        { text: " MINIMALISM", highlight: false },
+        { text: "PRIVACY", highlight: true },
+        { text: " BY DEFAULT", highlight: false },
       ],
-      description: "Reduce until only the essential remains. Every element earns its place.",
+      description:
+        "No emails, no names, no raw wallet histories. Event participation should not create permanent identity trails.",
       align: "left",
     },
     {
       number: "02",
       titleParts: [
-        { text: "SYSTEMS", highlight: true },
-        { text: " OVER SCREENS", highlight: false },
+        { text: "PROOFS", highlight: true },
+        { text: " OVER DATA", highlight: false },
       ],
-      description: "Design behaviors, not just layouts. Build logic that scales.",
+      description:
+        "Organizers get verifiable guarantees that requirements are met, without ever handling the underlying data.",
       align: "right",
     },
     {
       number: "03",
       titleParts: [
-        { text: "CONTROLLED ", highlight: false },
-        { text: "TENSION", highlight: true },
+        { text: "USER-OWNED ", highlight: false },
+        { text: "WALLETS", highlight: true },
       ],
-      description: "Balance between restraint and expression. Confidence without excess.",
+      description:
+        "Wallets are created and managed for event use, powered by BitGo, so users keep control and separation of funds.",
       align: "left",
     },
     {
       number: "04",
       titleParts: [
-        { text: "SIGNAL ", highlight: false },
-        { text: "CLARITY", highlight: true },
+        { text: "ON-CHAIN ", highlight: false },
+        { text: "VERIFIABILITY", highlight: true },
       ],
-      description: "Communication that cuts through noise. Precision in every interaction.",
+      description:
+        "Eligibility checks and ticket logic live on Base smart contracts, giving everyone a transparent, auditable path.",
       align: "right",
     },
   ]
@@ -94,7 +98,7 @@ export function PrinciplesSection() {
       {/* Section header */}
       <div ref={headerRef} className="mb-24">
         <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-accent">03 / Principles</span>
-        <h2 className="mt-4 font-[var(--font-bebas)] text-5xl md:text-7xl tracking-tight">HOW WE WORK</h2>
+        <h2 className="mt-4 font-[var(--font-bebas)] text-5xl md:text-7xl tracking-tight">WHAT DISCO BELIEVES</h2>
       </div>
 
       {/* Staggered principles */}

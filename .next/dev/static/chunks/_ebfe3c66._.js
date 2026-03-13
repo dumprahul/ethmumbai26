@@ -818,7 +818,7 @@ function HeroSection() {
                 className: "absolute left-4 md:left-6 top-1/2 -translate-y-1/2",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                     className: "font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground -rotate-90 origin-left block whitespace-nowrap",
-                    children: "SIGNAL"
+                    children: "DISCO"
                 }, void 0, false, {
                     fileName: "[project]/components/hero-section.tsx",
                     lineNumber: 42,
@@ -838,7 +838,7 @@ function HeroSection() {
                             className: "relative",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$split$2d$flap$2d$text$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SplitFlapText"], {
-                                    text: "INTERFACE",
+                                    text: "DISCO",
                                     speed: 80
                                 }, void 0, false, {
                                     fileName: "[project]/components/hero-section.tsx",
@@ -870,7 +870,7 @@ function HeroSection() {
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                         className: "font-[var(--font-bebas)] text-muted-foreground/60 text-[clamp(1rem,3vw,2rem)] mt-4 tracking-wide",
-                        children: "Studies in Controlled Environments"
+                        children: "Private, Proof-Based Events on Base"
                     }, void 0, false, {
                         fileName: "[project]/components/hero-section.tsx",
                         lineNumber: 58,
@@ -878,7 +878,7 @@ function HeroSection() {
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                         className: "mt-12 max-w-md font-mono text-sm text-muted-foreground leading-relaxed",
-                        children: "We design systems that behave, not just screens that display. Signals from the edge of what's shippable."
+                        children: "Event platforms shouldn't need your email, name, or full wallet history just to RSVP. Disco lets people prove they meet event requirements using zero-knowledge proofs, while BitGo-powered wallets and Base smart contracts handle tickets securely in the background."
                     }, void 0, false, {
                         fileName: "[project]/components/hero-section.tsx",
                         lineNumber: 62,
@@ -892,40 +892,40 @@ function HeroSection() {
                                 className: "group inline-flex items-center gap-3 border border-foreground/20 px-6 py-3 font-mono text-xs uppercase tracking-widest text-foreground hover:border-accent hover:text-accent transition-all duration-200",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$scramble$2d$text$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ScrambleTextOnHover"], {
-                                        text: "View Experiments",
+                                        text: "Explore Event Flows",
                                         as: "span",
                                         duration: 0.6
                                     }, void 0, false, {
                                         fileName: "[project]/components/hero-section.tsx",
-                                        lineNumber: 71,
+                                        lineNumber: 73,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$bitmap$2d$chevron$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["BitmapChevron"], {
                                         className: "transition-transform duration-[400ms] ease-in-out group-hover:rotate-45"
                                     }, void 0, false, {
                                         fileName: "[project]/components/hero-section.tsx",
-                                        lineNumber: 72,
+                                        lineNumber: 74,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/hero-section.tsx",
-                                lineNumber: 67,
+                                lineNumber: 69,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                href: "#signals",
+                                href: "#principles",
                                 className: "font-mono text-xs uppercase tracking-widest text-muted-foreground hover:text-foreground transition-colors duration-200",
-                                children: "Latest Signals"
+                                children: "How Disco Works"
                             }, void 0, false, {
                                 fileName: "[project]/components/hero-section.tsx",
-                                lineNumber: 74,
+                                lineNumber: 76,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/hero-section.tsx",
-                        lineNumber: 66,
+                        lineNumber: 68,
                         columnNumber: 9
                     }, this)
                 ]
@@ -938,15 +938,15 @@ function HeroSection() {
                 className: "absolute bottom-8 right-8 md:bottom-12 md:right-12",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "border border-border px-4 py-2 font-mono text-[10px] uppercase tracking-widest text-muted-foreground",
-                    children: "v.01 / Experimental Build"
+                    children: "v0.1 / EthMumbai Prototype"
                 }, void 0, false, {
                     fileName: "[project]/components/hero-section.tsx",
-                    lineNumber: 85,
+                    lineNumber: 87,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/hero-section.tsx",
-                lineNumber: 84,
+                lineNumber: 86,
                 columnNumber: 7
             }, this)
         ]
@@ -1004,29 +1004,29 @@ var _s = __turbopack_context__.k.signature();
 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"].registerPlugin(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$ScrollTrigger$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ScrollTrigger"]);
 const signals = [
     {
-        date: "2025.06.10",
-        title: "Signal Field",
-        note: "New interface paradigm for ambient computing environments."
+        date: "2026.03.14",
+        title: "ZK RSVP Live",
+        note: "Users can now RSVP to events with zero-knowledge proofs instead of sharing emails, names, or wallet history."
     },
     {
-        date: "2025.05.28",
-        title: "Silent Agent",
-        note: "Orchestration layer for autonomous design systems."
+        date: "2026.03.10",
+        title: "BitGo Wallets Wired In",
+        note: "Disco automatically provisions BitGo-powered wallets per attendee to isolate event activity from main wallets."
     },
     {
-        date: "2025.05.15",
-        title: "Noir Grid",
-        note: "Typographic system for editorial interfaces."
+        date: "2026.03.05",
+        title: "Base Ticket Contracts",
+        note: "Event eligibility and ticket issuance are now handled by smart contracts deployed on Base."
     },
     {
-        date: "2025.04.30",
-        title: "Project Lattice",
-        note: "Structural framework for adaptive layouts."
+        date: "2026.02.28",
+        title: "Age-Gated Proofs",
+        note: "Support for proving age ≥ threshold without revealing the actual birth date or identity data."
     },
     {
-        date: "2025.04.12",
-        title: "Echo Chamber",
-        note: "Audio-visual synthesis in browser environments."
+        date: "2026.02.20",
+        title: "Organizer Console",
+        note: "Simple event configuration for requirement rules, without ever touching raw attendee data."
     }
 ];
 function SignalsSection() {
@@ -1137,7 +1137,7 @@ function SignalsSection() {
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                         className: "font-mono text-[10px] uppercase tracking-[0.3em] text-accent",
-                        children: "01 / Signals"
+                        children: "01 / Product Signals"
                     }, void 0, false, {
                         fileName: "[project]/components/signals-section.tsx",
                         lineNumber: 138,
@@ -1145,7 +1145,7 @@ function SignalsSection() {
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                         className: "mt-4 font-[var(--font-bebas)] text-5xl md:text-7xl tracking-tight",
-                        children: "WHAT'S NEW"
+                        children: "WHAT'S NEW IN DISCO"
                     }, void 0, false, {
                         fileName: "[project]/components/signals-section.tsx",
                         lineNumber: 139,
@@ -1172,12 +1172,12 @@ function SignalsSection() {
                         index: index
                     }, index, false, {
                         fileName: "[project]/components/signals-section.tsx",
-                        lineNumber: 152,
+                        lineNumber: 154,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/components/signals-section.tsx",
-                lineNumber: 143,
+                lineNumber: 145,
                 columnNumber: 7
             }, this)
         ]
@@ -1200,7 +1200,7 @@ function SignalCard({ signal, index }) {
                         className: "absolute -top-px left-0 right-0 h-px bg-gradient-to-r from-transparent via-border/40 to-transparent"
                     }, void 0, false, {
                         fileName: "[project]/components/signals-section.tsx",
-                        lineNumber: 177,
+                        lineNumber: 179,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1214,7 +1214,7 @@ function SignalCard({ signal, index }) {
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/signals-section.tsx",
-                                lineNumber: 181,
+                                lineNumber: 183,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("time", {
@@ -1222,13 +1222,13 @@ function SignalCard({ signal, index }) {
                                 children: signal.date
                             }, void 0, false, {
                                 fileName: "[project]/components/signals-section.tsx",
-                                lineNumber: 184,
+                                lineNumber: 186,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/signals-section.tsx",
-                        lineNumber: 180,
+                        lineNumber: 182,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1236,14 +1236,14 @@ function SignalCard({ signal, index }) {
                         children: signal.title
                     }, void 0, false, {
                         fileName: "[project]/components/signals-section.tsx",
-                        lineNumber: 188,
+                        lineNumber: 190,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "w-12 h-px bg-accent/60 mb-6 group-hover:w-full transition-all duration-500"
                     }, void 0, false, {
                         fileName: "[project]/components/signals-section.tsx",
-                        lineNumber: 193,
+                        lineNumber: 195,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1251,7 +1251,7 @@ function SignalCard({ signal, index }) {
                         children: signal.note
                     }, void 0, false, {
                         fileName: "[project]/components/signals-section.tsx",
-                        lineNumber: 196,
+                        lineNumber: 198,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1260,31 +1260,31 @@ function SignalCard({ signal, index }) {
                             className: "absolute bottom-0 right-0 w-8 h-8 bg-background rotate-45 translate-x-4 translate-y-4 border-t border-l border-border/30"
                         }, void 0, false, {
                             fileName: "[project]/components/signals-section.tsx",
-                            lineNumber: 200,
+                            lineNumber: 202,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/signals-section.tsx",
-                        lineNumber: 199,
+                        lineNumber: 201,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/signals-section.tsx",
-                lineNumber: 175,
+                lineNumber: 177,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "absolute inset-0 -z-10 translate-x-1 translate-y-1 bg-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
             }, void 0, false, {
                 fileName: "[project]/components/signals-section.tsx",
-                lineNumber: 205,
+                lineNumber: 207,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/signals-section.tsx",
-        lineNumber: 167,
+        lineNumber: 169,
         columnNumber: 5
     }, this);
 }
@@ -1318,39 +1318,39 @@ var _s = __turbopack_context__.k.signature(), _s1 = __turbopack_context__.k.sign
 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"].registerPlugin(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$ScrollTrigger$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ScrollTrigger"]);
 const experiments = [
     {
-        title: "Project Lattice",
-        medium: "Interface Study",
-        description: "Structural framework for adaptive layouts in dynamic content systems.",
+        title: "Private RSVP",
+        medium: "ZK Proof Flow",
+        description: "Attendees prove they meet event requirements locally and submit a zero-knowledge proof instead of personal data.",
         span: "col-span-2 row-span-2"
     },
     {
-        title: "Signal Field",
-        medium: "Agent Orchestration",
-        description: "Autonomous coordination layer for multi-agent environments.",
+        title: "BitGo Wallet Creation",
+        medium: "Wallet Infra",
+        description: "When a user joins an event, Disco spins up a BitGo-managed wallet to isolate ticket activity from main wallets.",
         span: "col-span-1 row-span-1"
     },
     {
-        title: "Silent Agent",
-        medium: "Visual System",
-        description: "Non-intrusive interface patterns for ambient computing.",
+        title: "Base Ticket Contracts",
+        medium: "On-Chain Logic",
+        description: "Smart contracts on Base verify proofs and mint event tickets, so organizers never see raw attendee data.",
         span: "col-span-1 row-span-2"
     },
     {
-        title: "Noir Grid",
-        medium: "Typography",
-        description: "High-contrast typographic system for editorial interfaces.",
+        title: "Age & Membership Checks",
+        medium: "Eligibility Rules",
+        description: "Configure age thresholds or membership checks as verifiable conditions, without storing documents or IDs.",
         span: "col-span-1 row-span-1"
     },
     {
-        title: "Echo Chamber",
-        medium: "Audio-Visual",
-        description: "Generative soundscapes mapped to interface interactions.",
+        title: "Check-In Without Doxxing",
+        medium: "Entry Flow",
+        description: "At the door, attendees sign a message from their Disco wallet to prove ticket ownership—identity stays private.",
         span: "col-span-2 row-span-1"
     },
     {
-        title: "Void Protocol",
-        medium: "Experimental",
-        description: "Negative space as primary interaction medium.",
+        title: "Analytics Without Profiles",
+        medium: "Organizer View",
+        description: "Organizers see proofs of eligibility and attendance stats, never email lists or long-term identity graphs.",
         span: "col-span-1 row-span-1"
     }
 ];
@@ -1418,38 +1418,38 @@ function WorkSection() {
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 className: "font-mono text-[10px] uppercase tracking-[0.3em] text-accent",
-                                children: "02 / Experiments"
+                                children: "02 / Event Flows"
                             }, void 0, false, {
                                 fileName: "[project]/components/work-section.tsx",
-                                lineNumber: 101,
+                                lineNumber: 107,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                 className: "mt-4 font-[var(--font-bebas)] text-5xl md:text-7xl tracking-tight",
-                                children: "SELECTED WORK"
+                                children: "HOW DISCO RUNS EVENTS"
                             }, void 0, false, {
                                 fileName: "[project]/components/work-section.tsx",
-                                lineNumber: 102,
+                                lineNumber: 108,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/work-section.tsx",
-                        lineNumber: 100,
+                        lineNumber: 106,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                         className: "hidden md:block max-w-xs font-mono text-xs text-muted-foreground text-right leading-relaxed",
-                        children: "Studies across interface design, agent systems, and visual computation."
+                        children: "From RSVP to check-in, Disco keeps eligibility on-chain and identities off the guest list."
                     }, void 0, false, {
                         fileName: "[project]/components/work-section.tsx",
-                        lineNumber: 104,
+                        lineNumber: 110,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/work-section.tsx",
-                lineNumber: 99,
+                lineNumber: 105,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1461,18 +1461,18 @@ function WorkSection() {
                         persistHover: index === 0
                     }, index, false, {
                         fileName: "[project]/components/work-section.tsx",
-                        lineNumber: 115,
+                        lineNumber: 121,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/components/work-section.tsx",
-                lineNumber: 110,
+                lineNumber: 116,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/work-section.tsx",
-        lineNumber: 97,
+        lineNumber: 103,
         columnNumber: 5
     }, this);
 }
@@ -1515,7 +1515,7 @@ function WorkCard({ experiment, index, persistHover = false }) {
                 className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("absolute inset-0 bg-accent/5 transition-opacity duration-500", isActive ? "opacity-100" : "opacity-0")
             }, void 0, false, {
                 fileName: "[project]/components/work-section.tsx",
-                lineNumber: 168,
+                lineNumber: 174,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1526,7 +1526,7 @@ function WorkCard({ experiment, index, persistHover = false }) {
                         children: experiment.medium
                     }, void 0, false, {
                         fileName: "[project]/components/work-section.tsx",
-                        lineNumber: 177,
+                        lineNumber: 183,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1534,13 +1534,13 @@ function WorkCard({ experiment, index, persistHover = false }) {
                         children: experiment.title
                     }, void 0, false, {
                         fileName: "[project]/components/work-section.tsx",
-                        lineNumber: 180,
+                        lineNumber: 186,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/work-section.tsx",
-                lineNumber: 176,
+                lineNumber: 182,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1550,12 +1550,12 @@ function WorkCard({ experiment, index, persistHover = false }) {
                     children: experiment.description
                 }, void 0, false, {
                     fileName: "[project]/components/work-section.tsx",
-                    lineNumber: 192,
+                    lineNumber: 198,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/work-section.tsx",
-                lineNumber: 191,
+                lineNumber: 197,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1563,7 +1563,7 @@ function WorkCard({ experiment, index, persistHover = false }) {
                 children: String(index + 1).padStart(2, "0")
             }, void 0, false, {
                 fileName: "[project]/components/work-section.tsx",
-                lineNumber: 203,
+                lineNumber: 209,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1573,26 +1573,26 @@ function WorkCard({ experiment, index, persistHover = false }) {
                         className: "absolute top-0 right-0 w-full h-[1px] bg-accent"
                     }, void 0, false, {
                         fileName: "[project]/components/work-section.tsx",
-                        lineNumber: 219,
+                        lineNumber: 225,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "absolute top-0 right-0 w-[1px] h-full bg-accent"
                     }, void 0, false, {
                         fileName: "[project]/components/work-section.tsx",
-                        lineNumber: 220,
+                        lineNumber: 226,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/work-section.tsx",
-                lineNumber: 213,
+                lineNumber: 219,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/work-section.tsx",
-        lineNumber: 157,
+        lineNumber: 163,
         columnNumber: 5
     }, this);
 }
@@ -1750,60 +1750,60 @@ function PrinciplesSection() {
             number: "01",
             titleParts: [
                 {
-                    text: "INTERFACE",
+                    text: "PRIVACY",
                     highlight: true
                 },
                 {
-                    text: " MINIMALISM",
+                    text: " BY DEFAULT",
                     highlight: false
                 }
             ],
-            description: "Reduce until only the essential remains. Every element earns its place.",
+            description: "No emails, no names, no raw wallet histories. Event participation should not create permanent identity trails.",
             align: "left"
         },
         {
             number: "02",
             titleParts: [
                 {
-                    text: "SYSTEMS",
+                    text: "PROOFS",
                     highlight: true
                 },
                 {
-                    text: " OVER SCREENS",
+                    text: " OVER DATA",
                     highlight: false
                 }
             ],
-            description: "Design behaviors, not just layouts. Build logic that scales.",
+            description: "Organizers get verifiable guarantees that requirements are met, without ever handling the underlying data.",
             align: "right"
         },
         {
             number: "03",
             titleParts: [
                 {
-                    text: "CONTROLLED ",
+                    text: "USER-OWNED ",
                     highlight: false
                 },
                 {
-                    text: "TENSION",
+                    text: "WALLETS",
                     highlight: true
                 }
             ],
-            description: "Balance between restraint and expression. Confidence without excess.",
+            description: "Wallets are created and managed for event use, powered by BitGo, so users keep control and separation of funds.",
             align: "left"
         },
         {
             number: "04",
             titleParts: [
                 {
-                    text: "SIGNAL ",
+                    text: "ON-CHAIN ",
                     highlight: false
                 },
                 {
-                    text: "CLARITY",
+                    text: "VERIFIABILITY",
                     highlight: true
                 }
             ],
-            description: "Communication that cuts through noise. Precision in every interaction.",
+            description: "Eligibility checks and ticket logic live on Base smart contracts, giving everyone a transparent, auditable path.",
             align: "right"
         }
     ];
@@ -1863,21 +1863,21 @@ function PrinciplesSection() {
                         children: "03 / Principles"
                     }, void 0, false, {
                         fileName: "[project]/components/principles-section.tsx",
-                        lineNumber: 96,
+                        lineNumber: 100,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                         className: "mt-4 font-[var(--font-bebas)] text-5xl md:text-7xl tracking-tight",
-                        children: "HOW WE WORK"
+                        children: "WHAT DISCO BELIEVES"
                     }, void 0, false, {
                         fileName: "[project]/components/principles-section.tsx",
-                        lineNumber: 97,
+                        lineNumber: 101,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/principles-section.tsx",
-                lineNumber: 95,
+                lineNumber: 99,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1895,7 +1895,7 @@ function PrinciplesSection() {
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/principles-section.tsx",
-                                lineNumber: 110,
+                                lineNumber: 114,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1905,18 +1905,18 @@ function PrinciplesSection() {
                                         children: part.text
                                     }, i, false, {
                                         fileName: "[project]/components/principles-section.tsx",
-                                        lineNumber: 117,
+                                        lineNumber: 121,
                                         columnNumber: 19
                                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         children: part.text
                                     }, i, false, {
                                         fileName: "[project]/components/principles-section.tsx",
-                                        lineNumber: 121,
+                                        lineNumber: 125,
                                         columnNumber: 19
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/components/principles-section.tsx",
-                                lineNumber: 114,
+                                lineNumber: 118,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1924,31 +1924,31 @@ function PrinciplesSection() {
                                 children: principle.description
                             }, void 0, false, {
                                 fileName: "[project]/components/principles-section.tsx",
-                                lineNumber: 127,
+                                lineNumber: 131,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: `mt-8 h-[1px] bg-border w-24 md:w-48 ${principle.align === "right" ? "mr-0" : "ml-0"}`
                             }, void 0, false, {
                                 fileName: "[project]/components/principles-section.tsx",
-                                lineNumber: 132,
+                                lineNumber: 136,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, index, true, {
                         fileName: "[project]/components/principles-section.tsx",
-                        lineNumber: 103,
+                        lineNumber: 107,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/components/principles-section.tsx",
-                lineNumber: 101,
+                lineNumber: 105,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/principles-section.tsx",
-        lineNumber: 93,
+        lineNumber: 97,
         columnNumber: 5
     }, this);
 }
@@ -2059,7 +2059,7 @@ function ColophonSection() {
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                         className: "mt-4 font-[var(--font-bebas)] text-5xl md:text-7xl tracking-tight",
-                        children: "CREDITS"
+                        children: "DISCO DETAILS"
                     }, void 0, false, {
                         fileName: "[project]/components/colophon-section.tsx",
                         lineNumber: 79,
@@ -2091,7 +2091,7 @@ function ColophonSection() {
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                         className: "font-mono text-xs text-foreground/80",
-                                        children: "Signal Studio"
+                                        children: "Disco"
                                     }, void 0, false, {
                                         fileName: "[project]/components/colophon-section.tsx",
                                         lineNumber: 88,
@@ -2099,7 +2099,7 @@ function ColophonSection() {
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                         className: "font-mono text-xs text-foreground/80",
-                                        children: "Interface Lab"
+                                        children: "EthMumbai 2026 Prototype"
                                     }, void 0, false, {
                                         fileName: "[project]/components/colophon-section.tsx",
                                         lineNumber: 89,
@@ -2133,7 +2133,7 @@ function ColophonSection() {
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                         className: "font-mono text-xs text-foreground/80",
-                                        children: "Next.js"
+                                        children: "Next.js + Tailwind"
                                     }, void 0, false, {
                                         fileName: "[project]/components/colophon-section.tsx",
                                         lineNumber: 97,
@@ -2141,7 +2141,7 @@ function ColophonSection() {
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                         className: "font-mono text-xs text-foreground/80",
-                                        children: "Tailwind CSS"
+                                        children: "Base (L2) smart contracts"
                                     }, void 0, false, {
                                         fileName: "[project]/components/colophon-section.tsx",
                                         lineNumber: 98,
@@ -2149,10 +2149,18 @@ function ColophonSection() {
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                         className: "font-mono text-xs text-foreground/80",
-                                        children: "Vercel"
+                                        children: "BitGo wallet infrastructure"
                                     }, void 0, false, {
                                         fileName: "[project]/components/colophon-section.tsx",
                                         lineNumber: 99,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                        className: "font-mono text-xs text-foreground/80",
+                                        children: "Zero-knowledge proofs"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/colophon-section.tsx",
+                                        lineNumber: 100,
                                         columnNumber: 13
                                     }, this)
                                 ]
@@ -2175,7 +2183,7 @@ function ColophonSection() {
                                 children: "Typography"
                             }, void 0, false, {
                                 fileName: "[project]/components/colophon-section.tsx",
-                                lineNumber: 105,
+                                lineNumber: 106,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -2186,35 +2194,35 @@ function ColophonSection() {
                                         children: "Bebas Neue"
                                     }, void 0, false, {
                                         fileName: "[project]/components/colophon-section.tsx",
-                                        lineNumber: 107,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                        className: "font-mono text-xs text-foreground/80",
-                                        children: "Inter"
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/colophon-section.tsx",
                                         lineNumber: 108,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                         className: "font-mono text-xs text-foreground/80",
-                                        children: "Geist Mono"
+                                        children: "IBM Plex Sans"
                                     }, void 0, false, {
                                         fileName: "[project]/components/colophon-section.tsx",
                                         lineNumber: 109,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                        className: "font-mono text-xs text-foreground/80",
+                                        children: "IBM Plex Mono"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/colophon-section.tsx",
+                                        lineNumber: 110,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/colophon-section.tsx",
-                                lineNumber: 106,
+                                lineNumber: 107,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/colophon-section.tsx",
-                        lineNumber: 104,
+                        lineNumber: 105,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2225,7 +2233,7 @@ function ColophonSection() {
                                 children: "Location"
                             }, void 0, false, {
                                 fileName: "[project]/components/colophon-section.tsx",
-                                lineNumber: 115,
+                                lineNumber: 116,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -2233,30 +2241,30 @@ function ColophonSection() {
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                         className: "font-mono text-xs text-foreground/80",
-                                        children: "Remote"
+                                        children: "Internet-native"
                                     }, void 0, false, {
                                         fileName: "[project]/components/colophon-section.tsx",
-                                        lineNumber: 117,
+                                        lineNumber: 118,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                         className: "font-mono text-xs text-foreground/80",
-                                        children: "Everywhere"
+                                        children: "Built for Web3 events"
                                     }, void 0, false, {
                                         fileName: "[project]/components/colophon-section.tsx",
-                                        lineNumber: 118,
+                                        lineNumber: 119,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/colophon-section.tsx",
-                                lineNumber: 116,
+                                lineNumber: 117,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/colophon-section.tsx",
-                        lineNumber: 114,
+                        lineNumber: 115,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2267,7 +2275,7 @@ function ColophonSection() {
                                 children: "Contact"
                             }, void 0, false, {
                                 fileName: "[project]/components/colophon-section.tsx",
-                                lineNumber: 124,
+                                lineNumber: 125,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -2275,44 +2283,44 @@ function ColophonSection() {
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                            href: "mailto:hello@signal.studio",
+                                            href: "mailto:hello@disco.events",
                                             className: "font-mono text-xs text-foreground/80 hover:text-accent transition-colors duration-200",
                                             children: "Email"
                                         }, void 0, false, {
                                             fileName: "[project]/components/colophon-section.tsx",
-                                            lineNumber: 127,
+                                            lineNumber: 128,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/colophon-section.tsx",
-                                        lineNumber: 126,
+                                        lineNumber: 127,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                             href: "#",
                                             className: "font-mono text-xs text-foreground/80 hover:text-accent transition-colors duration-200",
-                                            children: "Twitter/X"
+                                            children: "Social"
                                         }, void 0, false, {
                                             fileName: "[project]/components/colophon-section.tsx",
-                                            lineNumber: 135,
+                                            lineNumber: 136,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/colophon-section.tsx",
-                                        lineNumber: 134,
+                                        lineNumber: 135,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/colophon-section.tsx",
-                                lineNumber: 125,
+                                lineNumber: 126,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/colophon-section.tsx",
-                        lineNumber: 123,
+                        lineNumber: 124,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2323,7 +2331,7 @@ function ColophonSection() {
                                 children: "Year"
                             }, void 0, false, {
                                 fileName: "[project]/components/colophon-section.tsx",
-                                lineNumber: 147,
+                                lineNumber: 148,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -2331,30 +2339,30 @@ function ColophonSection() {
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                         className: "font-mono text-xs text-foreground/80",
-                                        children: "2025"
+                                        children: "2026"
                                     }, void 0, false, {
                                         fileName: "[project]/components/colophon-section.tsx",
-                                        lineNumber: 149,
+                                        lineNumber: 150,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                         className: "font-mono text-xs text-foreground/80",
-                                        children: "Ongoing"
+                                        children: "EthMumbai Edition"
                                     }, void 0, false, {
                                         fileName: "[project]/components/colophon-section.tsx",
-                                        lineNumber: 150,
+                                        lineNumber: 151,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/colophon-section.tsx",
-                                lineNumber: 148,
+                                lineNumber: 149,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/colophon-section.tsx",
-                        lineNumber: 146,
+                        lineNumber: 147,
                         columnNumber: 9
                     }, this)
                 ]
@@ -2369,24 +2377,24 @@ function ColophonSection() {
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                         className: "font-mono text-[10px] text-muted-foreground uppercase tracking-widest",
-                        children: "© 2025 Signal. All rights reserved."
+                        children: "© 2026 Disco. All rights reserved."
                     }, void 0, false, {
                         fileName: "[project]/components/colophon-section.tsx",
-                        lineNumber: 160,
+                        lineNumber: 161,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                         className: "font-mono text-[10px] text-muted-foreground",
-                        children: "Designed with intention. Built with precision."
+                        children: "Privacy-preserving events. Verifiable on-chain, private off-chain."
                     }, void 0, false, {
                         fileName: "[project]/components/colophon-section.tsx",
-                        lineNumber: 163,
+                        lineNumber: 164,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/colophon-section.tsx",
-                lineNumber: 156,
+                lineNumber: 157,
                 columnNumber: 7
             }, this)
         ]
@@ -2422,15 +2430,15 @@ var _s = __turbopack_context__.k.signature();
 const navItems = [
     {
         id: "hero",
-        label: "Index"
+        label: "Overview"
     },
     {
         id: "signals",
-        label: "Signals"
+        label: "Updates"
     },
     {
         id: "work",
-        label: "Experiments"
+        label: "Event Flows"
     },
     {
         id: "principles",
