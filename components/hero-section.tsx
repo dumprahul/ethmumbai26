@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useRef } from "react"
+import Link from "next/link"
 import { ScrambleTextOnHover } from "@/components/scramble-text"
 import { SplitFlapText, SplitFlapMuteToggle, SplitFlapAudioProvider } from "@/components/split-flap-text"
 import { AnimatedNoise } from "@/components/animated-noise"
@@ -66,19 +67,16 @@ export function HeroSection() {
         </p>
 
         <div className="mt-16 flex items-center gap-8">
-          <a
-            href="#work"
-            className="group inline-flex items-center gap-3 border border-foreground/20 px-6 py-3 font-mono text-xs uppercase tracking-widest text-foreground hover:border-accent hover:text-accent transition-all duration-200"
-          >
-            <ScrambleTextOnHover text="Explore Event Flows" as="span" duration={0.6} />
+          <Link href="/create" className="group inline-flex items-center gap-3 border border-foreground/20 px-6 py-3 font-mono text-xs uppercase tracking-widest text-foreground hover:border-accent hover:text-accent transition-all duration-200">
+            <ScrambleTextOnHover text="Create Event" as="span" duration={0.6} />
             <BitmapChevron className="transition-transform duration-[400ms] ease-in-out group-hover:rotate-45" />
-          </a>
-          <a
-            href="#principles"
+          </Link>
+          <Link
+            href="/view"
             className="font-mono text-xs uppercase tracking-widest text-muted-foreground hover:text-foreground transition-colors duration-200"
           >
-            How Disco Works
-          </a>
+            View Events
+          </Link>
         </div>
       </div>
 
