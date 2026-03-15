@@ -154,19 +154,46 @@ export function BitgoEventRequirements() {
               </a>
             )}
             {ageProof && (
-              <div className="border-2 border-foreground p-4 flex flex-col gap-2 mt-2">
-                <span className="text-[10px] tracking-[0.2em] uppercase font-mono text-muted-foreground">
-                  ZK proof (Noir · Barretenberg)
-                </span>
-                <pre className="text-[11px] font-mono text-foreground overflow-x-auto overflow-y-auto max-h-48 p-3 bg-muted/50 border border-border whitespace-pre-wrap break-all">
-                  {ageProof.proof}
-                </pre>
-                {ageProof.publicInputs?.length ? (
-                  <p className="text-[10px] font-mono text-muted-foreground">
-                    Public inputs: {ageProof.publicInputs.join(", ")}
-                  </p>
-                ) : null}
-              </div>
+              <>
+                <div className="border-2 border-foreground p-4 flex flex-col gap-2 mt-2">
+                  <span className="text-[10px] tracking-[0.2em] uppercase font-mono text-muted-foreground">
+                    Exact params sent to verifyAge(bytes proof, bytes32[] publicInputs)
+                  </span>
+                  <div className="flex flex-col gap-2 text-[11px] font-mono">
+                    <div>
+                      <span className="text-muted-foreground">proof (bytes):</span>
+                      <pre className="mt-1 text-foreground overflow-x-auto overflow-y-auto max-h-40 p-3 bg-muted/50 border border-border whitespace-pre-wrap break-all">
+                        {ageProof.proof.startsWith("0x") ? ageProof.proof : `0x${ageProof.proof}`}
+                      </pre>
+                      <span className="text-muted-foreground">
+                        length: {ageProof.proof.startsWith("0x") ? ageProof.proof.length - 2 : ageProof.proof.length} hex chars ({(ageProof.proof.startsWith("0x") ? ageProof.proof.length - 2 : ageProof.proof.length) / 2} bytes)
+                      </span>
+                    </div>
+                    <div>
+                      <span className="text-muted-foreground">publicInputs (bytes32[]):</span>
+                      <pre className="mt-1 text-foreground p-2 bg-muted/50 border border-border">
+                        {JSON.stringify(ageProof.publicInputs ?? [], null, 2)}
+                      </pre>
+                      <span className="text-muted-foreground">
+                        length: {(ageProof.publicInputs ?? []).length} items
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div className="border-2 border-foreground p-4 flex flex-col gap-2 mt-2">
+                  <span className="text-[10px] tracking-[0.2em] uppercase font-mono text-muted-foreground">
+                    ZK proof (Noir · Barretenberg)
+                  </span>
+                  <pre className="text-[11px] font-mono text-foreground overflow-x-auto overflow-y-auto max-h-48 p-3 bg-muted/50 border border-border whitespace-pre-wrap break-all">
+                    {ageProof.proof}
+                  </pre>
+                  {ageProof.publicInputs?.length ? (
+                    <p className="text-[10px] font-mono text-muted-foreground">
+                      Public inputs: {ageProof.publicInputs.join(", ")}
+                    </p>
+                  ) : null}
+                </div>
+              </>
             )}
           </div>
         ) : (
