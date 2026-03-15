@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { Twitter } from "lucide-react"
 import { generateAgeProof } from "@/lib/age-proof"
+import { submitAgeProofOnChain } from "@/lib/submit-age-proof"
 
 const APP_ID = "e9779656-3ba1-4f32-b9c9-ee4747e37f20"
 const SCHEMA_ID = "f54c1d923b8a4e29a185155923250f7b"
@@ -26,6 +27,8 @@ export function BitgoEventRequirements() {
   const [age, setAge] = useState("")
   const [ageVerified, setAgeVerified] = useState(false)
   const [ageProof, setAgeProof] = useState<{ proof: string; publicInputs?: string[] } | null>(null)
+  const [ageTxHash, setAgeTxHash] = useState<string | null>(null)
+  const [ageTxUrl, setAgeTxUrl] = useState<string | null>(null)
   const [ageLoading, setAgeLoading] = useState(false)
   const [ageError, setAgeError] = useState<string | null>(null)
   const [followVerified, setFollowVerified] = useState(false)
@@ -64,21 +67,26 @@ export function BitgoEventRequirements() {
     setAgeLoading(true)
     setAgeError(null)
     setAgeProof(null)
+    setAgeTxHash(null)
+    setAgeTxUrl(null)
     try {
       const result = await generateAgeProof(num)
-      if (result) {
-        setAgeVerified(true)
-        setAgeProof({
-          proof: Array.from(result.proof)
-            .map((b) => b.toString(16).padStart(2, "0"))
-            .join(""),
-          publicInputs: result.publicInputs,
-        })
-      } else {
+      if (!result) {
         setAgeError("Failed to generate proof.")
+        return
       }
+      setAgeProof({
+        proof: Array.from(result.proof)
+          .map((b) => b.toString(16).padStart(2, "0"))
+          .join(""),
+        publicInputs: result.publicInputs,
+      })
+      const txResult = await submitAgeProofOnChain(result.proof, result.publicInputs)
+      setAgeTxHash(txResult.hash)
+      setAgeTxUrl(txResult.basescanUrl)
+      setAgeVerified(true)
     } catch (err) {
-      setAgeError(err instanceof Error ? err.message : "Proof generation failed.")
+      setAgeError(err instanceof Error ? err.message : "Proof or on-chain submit failed.")
     } finally {
       setAgeLoading(false)
     }
@@ -133,8 +141,18 @@ export function BitgoEventRequirements() {
         {ageVerified ? (
           <div className="flex flex-col gap-2">
             <p className="text-xs font-mono text-[#ea580c] uppercase tracking-widest">
-              Age verified (ZK proof generated)
+              Age verified on-chain (ZK proof submitted)
             </p>
+            {ageTxHash && ageTxUrl && (
+              <a
+                href={ageTxUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs font-mono text-[#ea580c] hover:underline"
+              >
+                View on Basescan: {ageTxHash.slice(0, 10)}…{ageTxHash.slice(-8)}
+              </a>
+            )}
             {ageProof && (
               <div className="border-2 border-foreground p-4 flex flex-col gap-2 mt-2">
                 <span className="text-[10px] tracking-[0.2em] uppercase font-mono text-muted-foreground">
@@ -172,7 +190,7 @@ export function BitgoEventRequirements() {
                 disabled={ageLoading}
                 className="font-mono tracking-widest uppercase border-2 border-foreground rounded-none bg-foreground text-background hover:bg-foreground/90 w-fit disabled:opacity-60"
               >
-                {ageLoading ? "Generating proof..." : "Prove age"}
+                {ageLoading ? "Proving & submitting on-chain..." : "Prove age"}
               </Button>
             </div>
             {ageError && (
