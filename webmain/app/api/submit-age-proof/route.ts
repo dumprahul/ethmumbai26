@@ -4,9 +4,9 @@
  *   TO_ADDRESS = AGE_VERIFIER_ADDRESS, AMOUNT_ETH = "0", CONTRACT_DATA = encode(verifyAge(proof, publicInputs))
  *   wallet.sendMany({ recipients, walletPassphrase, type: 'transfer', data })
  *
- * HonkVerifier expects exactly 0 public inputs (publicInputsSize 16 - PAIRING_POINTS_SIZE 16).
- * Body: { proof: string (hex), publicInputs?: string[] } (publicInputs ignored; we send [])
- * Server env: ACCESS_TOKEN, WALLET_ID, WALLET_PASSPHRASE, AGE_VERIFIER_ADDRESS, [BASE_SEPOLIA_RPC for preflight]
+ * Body: { proof: string (hex), publicInputs?: string[] }
+ * Returns: { hash, basescanUrl } or error.
+ * Server env: ACCESS_TOKEN, WALLET_ID, WALLET_PASSPHRASE, AGE_VERIFIER_ADDRESS
  */
 
 import { ethers } from "ethers"
@@ -15,7 +15,6 @@ const { BitGo } = require("bitgo")
 
 const COIN = "tbaseeth"
 const BASESCAN_TX_URL = "https://sepolia.basescan.org/tx/"
-const DEFAULT_RPC = "https://sepolia.base.org"
 const AGE_VERIFIER_ABI = [
   "function verifyAge(bytes calldata proof, bytes32[] calldata publicInputs) external",
 ]
@@ -31,6 +30,7 @@ export async function POST(request: Request) {
     const body = await request.json()
     const proofHex =
       strip(body?.proof) ?? (body?.proof as string)
+    const publicInputs = Array.isArray(body?.publicInputs) ? body.publicInputs : []
 
     if (!proofHex || (proofHex.startsWith("0x") ? proofHex.length < 10 : proofHex.length < 8)) {
       return Response.json(
@@ -40,9 +40,6 @@ export async function POST(request: Request) {
     }
 
     const proofHexNorm = proofHex.startsWith("0x") ? proofHex : `0x${proofHex}`
-
-    // HonkVerifier for this circuit expects exactly 0 public inputs (see contracts: publicInputsSize 16 - PAIRING_POINTS_SIZE 16)
-    const publicInputs: string[] = []
 
     const accessToken =
       strip(process.env.ACCESS_TOKEN) ?? strip(process.env.BITGO_ACCESS_TOKEN)
@@ -72,25 +69,6 @@ export async function POST(request: Request) {
     const iface = new ethers.Interface(AGE_VERIFIER_ABI)
     const data = iface.encodeFunctionData("verifyAge", [proofHexNorm, publicInputs])
 
-    // Preflight: simulate call to get revert reason (e.g. ProofLengthWrongWithLogN, Invalid proof)
-    const rpc = strip(process.env.BASE_SEPOLIA_RPC) ?? strip(process.env.NEXT_PUBLIC_BASE_SEPOLIA_RPC) ?? DEFAULT_RPC
-    const provider = new ethers.JsonRpcProvider(rpc)
-    const contract = new ethers.Contract(ageVerifierAddress as string, AGE_VERIFIER_ABI, provider)
-    try {
-      await contract.verifyAge.staticCall(proofHexNorm, publicInputs)
-    } catch (simErr: unknown) {
-      const msg = simErr instanceof Error ? simErr.message : String(simErr)
-      const revertReason = msg.includes("revert") ? msg : `simulation reverted: ${msg}`
-      return Response.json(
-        {
-          error: "Contract would revert. Ensure your circuit and HonkVerifier deployment match (same Noir/BB build).",
-          revertReason,
-          hint: "Common causes: proof length mismatch, wrong verifier for this circuit, or circuit built with different tooling.",
-        },
-        { status: 400 }
-      )
-    }
-
     const sendParams: {
       recipients: { address: string; amount: string }[]
       walletPassphrase: string
@@ -98,8 +76,8 @@ export async function POST(request: Request) {
       data: string
       gasLimit?: string
     } = {
-      recipients: [{ address: ageVerifierAddress as string, amount: "0" }],
-      walletPassphrase: walletPassphrase as string,
+      recipients: [{ address: ageVerifierAddress, amount: "0" }],
+      walletPassphrase: walletPassphrase!,
       type: "transfer",
       data,
     }
@@ -108,8 +86,6 @@ export async function POST(request: Request) {
     if (gasLimit) {
       const parsed = parseInt(gasLimit, 10)
       if (!Number.isNaN(parsed) && parsed > 0) sendParams.gasLimit = String(parsed)
-    } else {
-      sendParams.gasLimit = "800000"
     }
 
     const result = await wallet.sendMany(sendParams)
@@ -135,7 +111,7 @@ export async function POST(request: Request) {
     return Response.json(
       {
         error: message,
-        ...(result != null && typeof result === "object" ? { result } : {}),
+        ...(result && { result }),
       },
       { status: status && status >= 400 && status < 600 ? status : 500 }
     )

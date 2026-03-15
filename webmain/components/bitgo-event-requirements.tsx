@@ -6,7 +6,10 @@ import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { Twitter } from "lucide-react"
 import { generateAgeProof } from "@/lib/age-proof"
-import { submitAgeProofOnChain } from "@/lib/submit-age-proof"
+import {
+  submitAgeProofOnChain,
+  submitAgeProofOnChainWithEvmWallet,
+} from "@/lib/submit-age-proof"
 
 const APP_ID = "e9779656-3ba1-4f32-b9c9-ee4747e37f20"
 const SCHEMA_ID = "f54c1d923b8a4e29a185155923250f7b"
@@ -23,7 +26,12 @@ async function verifyFollowBitgo(): Promise<unknown> {
   }
 }
 
-export function BitgoEventRequirements() {
+export function BitgoEventRequirements({
+  useEvmWallet = false,
+}: {
+  /** If true, submit age proof via EVM wallet (private key); if false, via BitGo API. */
+  useEvmWallet?: boolean
+}) {
   const [age, setAge] = useState("")
   const [ageVerified, setAgeVerified] = useState(false)
   const [ageProof, setAgeProof] = useState<{ proof: string; publicInputs?: string[] } | null>(null)
@@ -81,7 +89,9 @@ export function BitgoEventRequirements() {
           .join(""),
         publicInputs: result.publicInputs,
       })
-      const txResult = await submitAgeProofOnChain(result.proof, result.publicInputs)
+      const txResult = useEvmWallet
+        ? await submitAgeProofOnChainWithEvmWallet(result.proof, result.publicInputs)
+        : await submitAgeProofOnChain(result.proof, result.publicInputs)
       setAgeTxHash(txResult.hash)
       setAgeTxUrl(txResult.basescanUrl)
       setAgeVerified(true)

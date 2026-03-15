@@ -118,8 +118,10 @@ export default async function EventDetailPage({ params }: EventDetailPageProps) 
           </div>
         </div>
 
-        {/* Bitgo After Hours Party: extra requirement boxes */}
-        {event.id === "EVT_001" && <BitgoEventRequirements />}
+        {/* Bitgo After Hours Party: ZK Twitter + ZK age (EVT_001 = BitGo, EVT_012 = EVM wallet) */}
+        {(event.id === "EVT_001" || event.id === "EVT_012") && (
+          <BitgoEventRequirements useEvmWallet={event.id === "EVT_012"} />
+        )}
       </main>
       <Footer />
     </div>
