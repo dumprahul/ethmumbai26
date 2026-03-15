@@ -1,8 +1,13 @@
 "use client"
 
-import { WorkflowDiagram } from "@/components/workflow-diagram"
+import dynamic from "next/dynamic"
 import { ArrowRight } from "lucide-react"
 import { motion } from "framer-motion"
+
+const WorkflowDiagram = dynamic(
+  () => import("@/components/workflow-diagram").then((m) => ({ default: m.WorkflowDiagram })),
+  { ssr: false, loading: () => <div className="h-[200px] w-full" /> }
+)
 
 const ease = [0.22, 1, 0.36, 1] as const
 
