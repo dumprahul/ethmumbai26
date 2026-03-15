@@ -5,6 +5,7 @@ import TransgateConnect from "@zkpass/transgate-js-sdk"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { Twitter } from "lucide-react"
+import { generateAgeProof } from "@/lib/age-proof"
 
 const APP_ID = "e9779656-3ba1-4f32-b9c9-ee4747e37f20"
 const SCHEMA_ID = "f54c1d923b8a4e29a185155923250f7b"
@@ -24,6 +25,9 @@ async function verifyFollowBitgo(): Promise<unknown> {
 export function BitgoEventRequirements() {
   const [age, setAge] = useState("")
   const [ageVerified, setAgeVerified] = useState(false)
+  const [ageProof, setAgeProof] = useState<{ proof: string; publicInputs?: string[] } | null>(null)
+  const [ageLoading, setAgeLoading] = useState(false)
+  const [ageError, setAgeError] = useState<string | null>(null)
   const [followVerified, setFollowVerified] = useState(false)
   const [followLoading, setFollowLoading] = useState(false)
   const [followError, setFollowError] = useState<string | null>(null)
@@ -50,11 +54,33 @@ export function BitgoEventRequirements() {
         : String(proof)
       : ""
 
-  const handleProveAge = (e: React.FormEvent) => {
+  const handleProveAge = async (e: React.FormEvent) => {
     e.preventDefault()
     const num = parseInt(age, 10)
-    if (!Number.isNaN(num) && num >= 18) {
-      setAgeVerified(true)
+    if (Number.isNaN(num) || num <= 18) {
+      setAgeError("Age must be greater than 18 to generate a proof.")
+      return
+    }
+    setAgeLoading(true)
+    setAgeError(null)
+    setAgeProof(null)
+    try {
+      const result = await generateAgeProof(num)
+      if (result) {
+        setAgeVerified(true)
+        setAgeProof({
+          proof: Array.from(result.proof)
+            .map((b) => b.toString(16).padStart(2, "0"))
+            .join(""),
+          publicInputs: result.publicInputs,
+        })
+      } else {
+        setAgeError("Failed to generate proof.")
+      }
+    } catch (err) {
+      setAgeError(err instanceof Error ? err.message : "Proof generation failed.")
+    } finally {
+      setAgeLoading(false)
     }
   }
 
@@ -105,26 +131,53 @@ export function BitgoEventRequirements() {
           Enter your age (Prove that you are above 18)
         </p>
         {ageVerified ? (
-          <p className="text-xs font-mono text-[#ea580c] uppercase tracking-widest">
-            Age verified
-          </p>
+          <div className="flex flex-col gap-2">
+            <p className="text-xs font-mono text-[#ea580c] uppercase tracking-widest">
+              Age verified (ZK proof generated)
+            </p>
+            {ageProof && (
+              <div className="border-2 border-foreground p-4 flex flex-col gap-2 mt-2">
+                <span className="text-[10px] tracking-[0.2em] uppercase font-mono text-muted-foreground">
+                  ZK proof (Noir · Barretenberg)
+                </span>
+                <pre className="text-[11px] font-mono text-foreground overflow-x-auto overflow-y-auto max-h-48 p-3 bg-muted/50 border border-border whitespace-pre-wrap break-all">
+                  {ageProof.proof}
+                </pre>
+                {ageProof.publicInputs?.length ? (
+                  <p className="text-[10px] font-mono text-muted-foreground">
+                    Public inputs: {ageProof.publicInputs.join(", ")}
+                  </p>
+                ) : null}
+              </div>
+            )}
+          </div>
         ) : (
-          <form onSubmit={handleProveAge} className="flex flex-col sm:flex-row gap-2">
-            <Input
-              type="number"
-              min={18}
-              max={120}
-              placeholder="Age"
-              value={age}
-              onChange={(e) => setAge(e.target.value)}
-              className="font-mono border-2 border-foreground rounded-none w-24"
-            />
-            <Button
-              type="submit"
-              className="font-mono tracking-widest uppercase border-2 border-foreground rounded-none bg-foreground text-background hover:bg-foreground/90 w-fit"
-            >
-              Prove age
-            </Button>
+          <form onSubmit={handleProveAge} className="flex flex-col gap-2">
+            <div className="flex flex-col sm:flex-row gap-2">
+              <Input
+                type="number"
+                min={19}
+                max={120}
+                placeholder="Age"
+                value={age}
+                onChange={(e) => {
+                  setAge(e.target.value)
+                  setAgeError(null)
+                }}
+                className="font-mono border-2 border-foreground rounded-none w-24"
+                disabled={ageLoading}
+              />
+              <Button
+                type="submit"
+                disabled={ageLoading}
+                className="font-mono tracking-widest uppercase border-2 border-foreground rounded-none bg-foreground text-background hover:bg-foreground/90 w-fit disabled:opacity-60"
+              >
+                {ageLoading ? "Generating proof..." : "Prove age"}
+              </Button>
+            </div>
+            {ageError && (
+              <p className="text-xs font-mono text-destructive">{ageError}</p>
+            )}
           </form>
         )}
       </div>
